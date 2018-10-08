@@ -18,7 +18,6 @@ namespace FoursLecture
         sunday = 7
     }
 
-
     class Program
     {
         static void Main(string[] args)
