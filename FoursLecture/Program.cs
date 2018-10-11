@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System;
+using static System.Console;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,18 +36,18 @@ namespace FoursLecture
                     if (j == 0)
                     {
                         if (input[i, j].Length < 10)
-                            Console.Write($"{input[i, j].ToLower()}");
+                            Write($"{input[i, j].ToLower()} ");
                         else
                         {
-                            Console.Write($"{input[i, j].ToLower().Substring(0, 10)}...");
+                            Write($"{input[i, j].ToLower().Substring(0, 10)}... ");
                         }
                     }
                     else
-                        Console.Write(" on "+(WeekDays)int.Parse(input[i, j]));
+                        Write("on " + (WeekDays)int.Parse(input[i, j]));
                 }
-                Console.WriteLine();
+                WriteLine();
             }
-            Console.ReadLine();
+            ReadLine();
         }
     }
 }
